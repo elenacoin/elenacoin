@@ -42,12 +42,15 @@ memory available when compiling Bitcoin Core. On systems with less, gcc can be
 tuned to conserve memory with additional CXXFLAGS:
 
 
-    ./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
+    "--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
 
 
 ## Linux Distribution Specific Instructions
 
 ### Ubuntu & Debian
+
+Officially supported versions are Ubuntu 18.04 (recommended), Ubuntu 16.04 and Debian 9.
+Compiling on older versions is possible, if "-DBOOST_NO_CXX11_SCOPED_ENUMS" is added to DEFS in makefile.
 
 #### Dependency Build Instructions
 
