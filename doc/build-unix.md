@@ -8,10 +8,9 @@ To Build
 ---------------------
 
 ```bash
-make -f makefile.uni
+cd elenacoin/src
+make -f makefile.unix
 ```
-
-This will build bitcoin-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
